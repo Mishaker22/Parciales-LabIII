@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial1</title>
+    <script src="../Parcial1/js/funciones.js"></script>
+    <script src="../Parcial1/js/function.js"></script>
+    <link rel="stylesheet" href="../Parcial1/css/estilos.css">
+</head>
+<body>
+    <div class="contenedor" id="div" hidden>
+        <div class="ContCerrar">
+            <input type="button" value="X" id="btnCerrar"/>
+        </div>
+        <label for="name">Nombre</label><br/>
+        <input type="text" name="nombre" id="name" class="inputSinError inputConError" placeholder="Ingrese la materia"><br/>
+        <label for="lastname">Cuatrimestre</label><br/>
+        <select id="cuatri" disabled><!--size="2" size para ver cuantas opciones por combobox-->
+            <option value="0">1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+            <option value="3">4</option>
+            <optgroup label="Generos comunes">
+        </select>
+        <label for="date">Fecha</label><br/>
+        <input type="date" name="Fecha" id="dates" max="" class="inputSinError inputError" ><br/>
+        <div>
+            <input type="radio" id="jM" name="Turno" value="Mañana"/>Mañana
+            <input type="radio" id="jN" name="Turno" value="Noche"/>Noche
+        </div>
+        <div class="ContBotones">
+            <input type="button" value="Modificar" id="btnModificar"/>
+            <input type="button" value="Eliminar" id="btnEliminar"/>
+        </div>
+        
+    </div>
+    <div class="Tabla">
+        <div id="spinner" class="Spinner" hidden>
+            <div class="ContCerrar">
+                <input type="button" value="X" id="btnCerrar"/>
+            </div>
+            <div class="gif">
+            </div>
+        </div>
+        <h2>Lista de Materias</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cuatrimestre</th>
+                <th>Fecha Final</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+            
+        </tbody>
+    </table>
+    </div>
+    
+
+</body>
+</html>
