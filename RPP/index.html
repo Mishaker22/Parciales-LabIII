@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPP LAB</title>
+    <script src="../RPP/js/funciones.js"></script>
+    <script src="../RPP/js/function.js"></script>
+    <link rel="stylesheet" href="../RPP/css/estilos.css">
+</head>
+<body>
+    <input type="button" value="Alta" id="btnAbrirContenedor"/>
+    <div class="contenedor" id="div" hidden>
+        <div class="ContCerrar">
+            <input type="button" value="X" id="btnCerrar"/>
+        </div>
+        <label for="marcas">Marca</label><br/>
+        <input type="text" name="marcas" id="marca" class="inputSinError inputConError" placeholder="Ingrese la marca"><br/>
+        <label for="modelos">Modelo</label><br/>
+        <input type="text" name="modelos" id="modelo" class="inputSinError inputConError" placeholder="Ingrese el modelo"><br/>
+        <label for="year">Año</label><br/>
+        <select id="year" class="inputSinError inputConError"><!--size="2" size para ver cuantas opciones por combobox-->
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+        </select>
+        
+        <div class="ContBotones">
+            <input type="button" value="Guardar" class="botonGuardar" id="btnGuardar"/>
+            <input type="button" value="Cancelar" class="botonCancelar" id="btnCancelar"/>
+        </div>
+        
+    </div>
+    <div class="Tabla">
+        <div id="spinner" class="Spinner" hidden>
+            <div class="XCont">
+                <input type="button" value="X" id="XCerrar"/>
+            </div>
+            <div class="gif">
+            </div>
+        </div>
+        <h2>Lista de Autos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Año </th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+            
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
