@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP</title>
+    <script src="./script/Persona.js"></script>
+    <script src="./script/Cliente.js"></script>
+    <script src="./script/Funciones.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+<body  id="body">
+<h1>ABM PERSONAS</h1>
+<hr>
+<div>
+    <div id="cont">
+        <label for="txtID" class="text">
+            ID:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtID" placeholder="ID" disabled/>
+        <br />
+        <label for="txtName">
+            Nombre:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtName" placeholder="Nombre"/> 
+        <br />
+        <label>
+            Apellido:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtApellido" placeholder="Apellido"/> 
+        <br />
+        <label>
+            Edad:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtEdad" placeholder="Edad"/> 
+        <br>
+        <label for="selSexo">
+            Sexo:
+        </label>
+        <br />
+        <select class="textBox" name="selSexo" id="selSexo">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+        </select>
+    </div>
+    
+    <br>
+    <br>
+    <input type="button" id="btnEliminar" value="Eliminar"/>
+    <input type="button" id="btnAgregar" value="Agregar"/>
+    <input type="button" id="btnLimpiar" value="Limpiar"/>
+    <hr>   
+    <h1 class="alignCenter">Filtros</h2>   
+        Filtrar por:
+        <select name="filtro" id="selFiltrar" class="textBoxIndex" >
+            <option value="Todo">Todo</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+        Nombre:
+        <input type="text" name="nombre" id="txtSearch" class="textBoxIndex" >
+        <input type="button" name="buscar" id="btnBuscar" value="Search" class="btnIndex">
+        Promedio de Edad:
+        <input type="text" name="promedio" id="txtPromedio"  class="textBoxIndex">
+        <button id="btnPromedio">Calcular Promedio</button>
+        <hr>
+        <h2>Campos Mostrados</h2>Tildar los campos a mostrar
+        <hr>  
+        <div class="campos">
+            <input type="checkbox" id="idOcultar" name="idFiltrado" checked>
+            <label for="idOcultar">ID</label> &nbsp &nbsp
+            <input type="checkbox" id="nombreOcultar" name="nombreFiltrado" checked>
+            <label for="nombreOcultar">Nombre</label> &nbsp &nbsp
+            <input type="checkbox" id="apellidoOcultar" name="apellidoFiltrado" checked>
+            <label for="apellidoOcultar">Apellido</label> &nbsp &nbsp
+            <input type="checkbox" id="edadOcultar" name="edadFiltrada"checked>
+            <label for="edadOcultar">Edad</label>
+    </div>
+        <hr>
+    <h2 class="alignCenter">Lista de Vehiculos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th name="idTabla" >ID</th>
+                <th name="nombreTabla" >Nombre</th>
+                <th name="apellidoTabla" >Apellido</th>
+                <th name="edadTabla">Edad</th>
+                <th>Sexo</th>  
+            </tr>
+                      
+        </thead>
+        <tbody id="tablaPersonas">
+
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
